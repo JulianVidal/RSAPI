@@ -1,19 +1,33 @@
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer-extra')
+const stealthPlugin = require('puppeteer-extra-plugin-stealth')
+const userAgent = require('user-agents')
 const express =  require('express')
 
 const app = express()
 
 
-async function scrape() {
+async function scrape(search) {
+  await puppeteer.use(stealthPlugin())
+
   const browser = await puppeteer.launch({headless: false})
 
-  const search = 'Seattle'
-
   const page = await browser.newPage()
-  await page.goto('https://www.zillow.com/homes/for_sale/' + search, {
-    waitUntil: 'domcontentloaded'
+  await page.setViewport({
+    width: 640,
+    height: 480
+  })
+  await page.setUserAgent(userAgent.toString())
+  await page.goto('https://www.zillow.com/', {
+    waitUntil: 'networkidle0'
   })
 
+  // await new Promise(resolve => setTimeout(resolve, 1000));
+  await page.type('#search-box-input', search || 'Seattle', {delay: 100})
+  await page.click('#search-icon')
+  await new Promise(resolve => setTimeout(resolve, 200));
+  await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
+
+  await new Promise(resolve => setTimeout(resolve, 500));
   await page.evaluate( async () => {
     let distance = 0
     while (distance < document.body.scrollHeight) {
@@ -32,13 +46,21 @@ async function scrape() {
       const property = propertiesList.childNodes[i];
       console.log(i, property)
       if (i === 2) continue
+      console.log(i, property)
       const adress = property.querySelector('address').innerText
       const link = property.querySelector('a').href
       const price = property.querySelector('.list-card-price').innerText
-      const beds = property.querySelector('.list-card-details').childNodes[0].innerText
-      const baths = property.querySelector('.list-card-details').childNodes[1].innerText
-      const sqft = property.querySelector('.list-card-details').childNodes[2].innerText
       const image = property.querySelector('img').src
+
+      let beds, baths, sqft
+
+      if (property.querySelector('.list-card-details').childNodes[1]) {
+        beds = property.querySelector('.list-card-details').childNodes[0].innerText
+        baths = property.querySelector('.list-card-details').childNodes[1].innerText
+        sqft = property.querySelector('.list-card-details').childNodes[2].innerText
+      } else {
+        sqft = property.querySelector('.list-card-details').childNodes[0].innerText
+      }
       
       properties.push({adress, link, price, beds, baths, sqft, image})
     }
@@ -54,10 +76,10 @@ async function scrape() {
 }
 
 app.get('/api', async (req, res) => {
-  const data = await scrape()
-  // console.log(data)
+  const search = req.query.location
+  const data = await scrape(search)
+  console.log(data)
   res.json(data)
-  
 })
 
 app.listen(5000)
