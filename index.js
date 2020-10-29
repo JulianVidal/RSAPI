@@ -26,7 +26,7 @@ async function scrape(queries) {
   })
 
   const list = {}
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < queries.length; i++) {
     const search = queries[i].name;
 
   if (i === 0) {
@@ -34,7 +34,7 @@ async function scrape(queries) {
     await page.click('#search-icon')
     await new Promise(resolve => setTimeout(resolve, 150));
     await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await new Promise(resolve => setTimeout(resolve, 500));
 
   } else {
     const length = await page.evaluate(() => {return document.querySelector('input[type=text]').value.length})
@@ -50,7 +50,7 @@ async function scrape(queries) {
   await page.evaluate( async () => {
     let distance = 0
     while (distance < document.body.scrollHeight) {
-      await new Promise(resolve => setTimeout(resolve, 200));
+      await new Promise(resolve => setTimeout(resolve, 400));
       window.scrollBy(0, window.innerHeight)
       distance += window.innerHeight
     }
