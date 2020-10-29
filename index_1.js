@@ -2,14 +2,13 @@ const puppeteer = require('puppeteer-extra')
 const stealthPlugin = require('puppeteer-extra-plugin-stealth')
 const userAgent = require('user-agents')
 const express =  require('express')
-const fs = require('fs')
-const { states } = require('./states.json')
+const states = require('./states.json')
 
 
 const app = express()
 
 
-async function scrape(queries) {
+async function scrape(search) {
   await puppeteer.use(stealthPlugin())
 
   const browser = await puppeteer.launch({headless: false})
@@ -22,41 +21,25 @@ async function scrape(queries) {
   await page.setUserAgent(userAgent.toString())
   
   await page.goto('https://www.zillow.com/', {
-    waitUntil: 'domcontentloaded'
+    waitUntil: 'networkidle0'
   })
 
-  const list = {}
-  for (let i = 0; i < 2; i++) {
-    const search = queries[i].name;
+  await page.type('#search-box-input', search || 'Seattle', {delay: 100})
+  await page.click('#search-icon')
+  await new Promise(resolve => setTimeout(resolve, 200));
+  await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
 
-  if (i === 0) {
-    await page.type('#search-box-input', search, {delay: 100})
-    await page.click('#search-icon')
-    await new Promise(resolve => setTimeout(resolve, 150));
-    await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
-    await new Promise(resolve => setTimeout(resolve, 300));
-
-  } else {
-    const length = await page.evaluate(() => {return document.querySelector('input[type=text]').value.length})
-
-    await page.focus('input[type=text]')
-    let i = 0
-    while (i <= length) {await page.keyboard.press('Backspace'); i++}
-    await page.type('input[type=text]', search, {delay: 100})
-    await page.click('div.searchBtnContainer > button')
-    await page.waitForNavigation()
-  }
-
+  await new Promise(resolve => setTimeout(resolve, 500));
   await page.evaluate( async () => {
     let distance = 0
     while (distance < document.body.scrollHeight) {
-      await new Promise(resolve => setTimeout(resolve, 200));
+      await new Promise(resolve => setTimeout(resolve, 250));
       window.scrollBy(0, window.innerHeight)
       distance += window.innerHeight
     }
     })
 
-  const properties = await page.evaluate( () => {
+  const list = await page.evaluate( () => {
     const properties = []
 
     const propertiesList = document.querySelector('#grid-search-results > ul')
@@ -87,10 +70,6 @@ async function scrape(queries) {
     return properties
   })
 
-  list[search] = properties
-    
-  }
-
   await browser.close()
 
   console.log(list)
@@ -99,12 +78,21 @@ async function scrape(queries) {
 }
 
 app.get('/api', async (req, res) => {
-  const data = await scrape(states)
-  fs.writeFileSync('./data.json', JSON.stringify(data, null, 2))
+  const search = req.query.location
+  const data = await scrape(search)
   console.log(data)
   res.json(data)
 })
 
+app.get('/', async (req, res) => {  
+  
+  for (let i = 0; i < states.length; i++) {
+    const state = states[i];
+    console.log(state)
+  }
+
+  res.json(states)
+})
 
 app.listen(5000)
 

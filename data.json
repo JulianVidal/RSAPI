@@ -1,0 +1,716 @@
+{
+  "Alabama": [
+    {
+      "adress": "95 County Road 1371, Vinemont, AL 35179",
+      "link": "https://www.zillow.com/homedetails/95-County-Road-1371-Vinemont-AL-35179/2077386570_zpid/",
+      "price": "$65,000",
+      "beds": "5 bds",
+      "baths": "2 ba",
+      "sqft": "2,300 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISf8rah9i37jaw0000000000.jpg"
+    },
+    {
+      "adress": "485 Israel Rd, Haleyville, AL 35565",
+      "link": "https://www.zillow.com/homedetails/485-Israel-Rd-Haleyville-AL-35565/104507223_zpid/",
+      "price": "$180,000",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "3,100 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISjrgygxwxizu31000000000.jpg"
+    },
+    {
+      "adress": "919 Highland Lakes Ln, Birmingham, AL 35242",
+      "link": "https://www.zillow.com/homedetails/919-Highland-Lakes-Ln-Birmingham-AL-35242/182846_zpid/",
+      "price": "$231K",
+      "beds": "4 bds",
+      "baths": "4 ba",
+      "sqft": "3,000 sqft",
+      "image": "https://photos.zillowstatic.com/fp/5552d8500d918ee9392c62e38b3cc2cb-p_e.jpg"
+    },
+    {
+      "adress": "17217 Phillips Pl, Fairhope, AL 36532",
+      "link": "https://www.zillow.com/homedetails/17217-Phillips-Pl-Fairhope-AL-36532/72747118_zpid/",
+      "price": "$182,500",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,196 sqft",
+      "image": "https://photos.zillowstatic.com/fp/9c672bbcdf4bce0ba49a31e3622c624d-p_e.jpg"
+    },
+    {
+      "adress": "2416 Stonewood Dr, Dothan, AL 36301",
+      "link": "https://www.zillow.com/homedetails/2416-Stonewood-Dr-Dothan-AL-36301/90646557_zpid/",
+      "price": "$170,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,563 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzf6bgallovo70000000000.jpg"
+    },
+    {
+      "adress": "32150 Highway 195, Haleyville, AL 35553",
+      "link": "https://www.zillow.com/homedetails/32150-Highway-195-Haleyville-AL-35553/121018266_zpid/",
+      "price": "$169,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,855 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISjf3g0aup2i1g1000000000.jpg"
+    },
+    {
+      "adress": "105 Clay Cir, Daphne, AL 36526",
+      "link": "https://www.zillow.com/homedetails/105-Clay-Cir-Daphne-AL-36526/72735593_zpid/",
+      "price": "$130,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,406 sqft",
+      "image": "https://photos.zillowstatic.com/fp/88f9c056af034b13325fabe845b8e25f-p_e.jpg"
+    },
+    {
+      "adress": "5 Hill Dr, Cherokee, AL 35616",
+      "link": "https://www.zillow.com/homedetails/5-Hill-Dr-Cherokee-AL-35616/75944140_zpid/",
+      "price": "$110,000",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,047 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS7ardyw1lgy7d1000000000.jpg"
+    },
+    {
+      "adress": "3800 Meadow Wood Cir, Guntersville, AL 35976",
+      "link": "https://www.zillow.com/homedetails/3800-Meadow-Wood-Cir-Guntersville-AL-35976/146482_zpid/",
+      "price": "$119,000",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "1,855 sqft",
+      "image": "https://photos.zillowstatic.com/fp/29f8636c15a449c434a1769622f4b60a-p_e.jpg"
+    },
+    {
+      "adress": "1121 18th Ave, Calera, AL 35040",
+      "link": "https://www.zillow.com/homedetails/1121-18th-Ave-Calera-AL-35040/2077357882_zpid/",
+      "price": "$79,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "3,662 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISnuxwqc82lfbq0000000000.jpg"
+    },
+    {
+      "adress": "5735 Oakwild Dr, Montgomery, AL 36117",
+      "link": "https://www.zillow.com/homedetails/5735-Oakwild-Dr-Montgomery-AL-36117/120580225_zpid/",
+      "price": "$97,500",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,428 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISnetqyl1ufdr80000000000.jpg"
+    },
+    {
+      "adress": "19101 County Road 8, Bon Secour, AL 36542",
+      "link": "https://www.zillow.com/homedetails/19101-County-Road-8-Bon-Secour-AL-36542/72764165_zpid/",
+      "price": "$189,900",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "3,150 sqft",
+      "image": "https://photos.zillowstatic.com/fp/1e783f46efdfa871f128e7a9d24c69fc-p_e.jpg"
+    },
+    {
+      "adress": "1021 Juniper Ct, Montgomery, AL 36117",
+      "link": "https://www.zillow.com/homedetails/1021-Juniper-Ct-Montgomery-AL-36117/118922979_zpid/",
+      "price": "$138,000",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "1,644 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISrha9o6b7ln2d0000000000.jpg"
+    },
+    {
+      "adress": "12188 Squirrel Dr, Spanish Fort, AL 36527",
+      "link": "https://www.zillow.com/homedetails/12188-Squirrel-Dr-Spanish-Fort-AL-36527/120115333_zpid/",
+      "price": "$332,000",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "2,678 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISblix14fg68rt0000000000.jpg"
+    },
+    {
+      "adress": "11525 Highway 45, Chunchula, AL 36521",
+      "link": "https://www.zillow.com/homedetails/11525-Highway-45-Chunchula-AL-36521/50951533_zpid/",
+      "price": "$339,359",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,944 sqft",
+      "image": "https://photos.zillowstatic.com/fp/6221c576eea2e74fbb4ec5511e8f73e7-p_e.jpg"
+    },
+    {
+      "adress": "12 New Hope Rd, Springville, AL 35146",
+      "link": "https://www.zillow.com/homedetails/12-New-Hope-Rd-Springville-AL-35146/101851_zpid/",
+      "price": "$289,900",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "2,741 sqft",
+      "image": "https://photos.zillowstatic.com/fp/b8ac2b1f18167115b4f80b696ad0b2bb-p_e.jpg"
+    },
+    {
+      "adress": "4907 County Road 45, Hayden, AL 35079",
+      "link": "https://www.zillow.com/homedetails/4907-County-Road-45-Hayden-AL-35079/2077365338_zpid/",
+      "price": "$179,900",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "2,388 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISfgtllkj7nscx0000000000.jpg"
+    },
+    {
+      "adress": "2200 Windover Dr NE, Huntsville, AL 35811",
+      "link": "https://www.zillow.com/homedetails/2200-Windover-Dr-NE-Huntsville-AL-35811/92116201_zpid/",
+      "price": "$179,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,800 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISf8fdb5xhskxf1000000000.jpg"
+    },
+    {
+      "adress": "1114 Fribourg St, Mobile, AL 36608",
+      "link": "https://www.zillow.com/homedetails/1114-Fribourg-St-Mobile-AL-36608/50984580_zpid/",
+      "price": "$189,900",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,625 sqft",
+      "image": "https://photos.zillowstatic.com/fp/82258b962d0af88f6bd3f74cddb4bd36-p_e.jpg"
+    },
+    {
+      "adress": "3355 Crescent Dr, Bessemer, AL 35023",
+      "link": "https://www.zillow.com/homedetails/3355-Crescent-Dr-Bessemer-AL-35023/1036097_zpid/",
+      "price": "$139,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,106 sqft",
+      "image": "https://photos.zillowstatic.com/fp/9d300e03364a979a33f6a128b652aa0e-p_e.jpg"
+    },
+    {
+      "adress": "1155 Summit Ridge Way, Odenville, AL 35120",
+      "link": "https://www.zillow.com/homedetails/1155-Summit-Ridge-Way-Odenville-AL-35120/80132676_zpid/",
+      "price": "$169,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,073 sqft",
+      "image": "https://photos.zillowstatic.com/fp/f196ab59c7d909f1fb5babc619824c63-p_e.jpg"
+    },
+    {
+      "adress": "1525 Fairmont Dr, Tuscaloosa, AL 35404",
+      "link": "https://www.zillow.com/homedetails/1525-Fairmont-Dr-Tuscaloosa-AL-35404/35754607_zpid/",
+      "price": "$188,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,794 sqft",
+      "image": "https://photos.zillowstatic.com/fp/7e11bebd89a9234dd6ae9f6d2b4d79d2-p_e.jpg"
+    },
+    {
+      "adress": "169 Frazier Ln, Vincent, AL 35178",
+      "link": "https://www.zillow.com/homedetails/169-Frazier-Ln-Vincent-AL-35178/173787_zpid/",
+      "price": "$164,900",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "1,550 sqft",
+      "image": "https://photos.zillowstatic.com/fp/0309a3199a8a6ef0b2b3aca02001f04b-p_e.jpg"
+    },
+    {
+      "adress": "2249 Semmes Dr, Montgomery, AL 36106",
+      "link": "https://www.zillow.com/homedetails/2249-Semmes-Dr-Montgomery-AL-36106/72828751_zpid/",
+      "price": "$139,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,724 sqft",
+      "image": "https://photos.zillowstatic.com/fp/01024c603de0c30d7be4f480322f776d-p_e.jpg"
+    },
+    {
+      "adress": "2110 Cloyd Blvd, Florence, AL 35630",
+      "link": "https://www.zillow.com/homedetails/2110-Cloyd-Blvd-Florence-AL-35630/67111199_zpid/",
+      "price": "$309,900",
+      "beds": "4 bds",
+      "baths": "4 ba",
+      "sqft": "3,189 sqft",
+      "image": "https://photos.zillowstatic.com/fp/5a690caeba04417dd1554a4efce07d5d-p_e.jpg"
+    },
+    {
+      "adress": "1470 Willows End, Alexander City, AL 35010",
+      "link": "https://www.zillow.com/homedetails/1470-Willows-End-Alexander-City-AL-35010/104554613_zpid/",
+      "price": "$7,900,000",
+      "beds": "10 bds",
+      "baths": "16 ba",
+      "sqft": "15,695 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISn6z5co95ayjs1000000000.jpg"
+    },
+    {
+      "adress": "1435 County Road 76, Centre, AL 35960",
+      "link": "https://www.zillow.com/homedetails/1435-County-Road-76-Centre-AL-35960/96809985_zpid/",
+      "price": "$210,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,169 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzj1qjc9bqc4t1000000000.jpg"
+    },
+    {
+      "adress": "23329 County Road 62 S, Robertsdale, AL 36567",
+      "link": "https://www.zillow.com/homedetails/23329-County-Road-62-S-Robertsdale-AL-36567/111208180_zpid/",
+      "price": "$159,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,668 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISvc12qg7oiokb0000000000.jpg"
+    },
+    {
+      "adress": "838 County Road 2565, Wedowee, AL 36278",
+      "link": "https://www.zillow.com/homedetails/838-County-Road-2565-Wedowee-AL-36278/104535658_zpid/",
+      "price": "$249,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,440 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS3bp1rv39zag60000000000.jpg"
+    },
+    {
+      "adress": "629 Ridgewood Dr, Daphne, AL 36526",
+      "link": "https://www.zillow.com/homedetails/629-Ridgewood-Dr-Daphne-AL-36526/72728625_zpid/",
+      "price": "$244,900",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "3,536 sqft",
+      "image": "https://photos.zillowstatic.com/fp/5ab50001002d0d7acccb2edaa1ce3ce4-p_e.jpg"
+    },
+    {
+      "adress": "2905 Noccalula Pkwy, Attalla, AL 35954",
+      "link": "https://www.zillow.com/homedetails/2905-Noccalula-Pkwy-Attalla-AL-35954/75966037_zpid/",
+      "price": "$299,900",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "2,464 sqft",
+      "image": "https://photos.zillowstatic.com/fp/08b8c0682bf1354c1a6a9e65bfaed4fe-p_e.jpg"
+    },
+    {
+      "adress": "1041 Graymont Ave W, Birmingham, AL 35204",
+      "link": "https://www.zillow.com/homedetails/1041-Graymont-Ave-W-Birmingham-AL-35204/941731_zpid/",
+      "price": "$159,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,744 sqft",
+      "image": "https://photos.zillowstatic.com/fp/1f7cbfe1c33f94b631b571efb96ed62c-p_e.jpg"
+    },
+    {
+      "adress": "402 Etowah Ave, Opelika, AL 36801",
+      "link": "https://www.zillow.com/homedetails/402-Etowah-Ave-Opelika-AL-36801/76021178_zpid/",
+      "price": "$238,500",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,395 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzjlt3yg97phh1000000000.jpg"
+    },
+    {
+      "adress": "409 Clifton St, Camden, AL 36726",
+      "link": "https://www.zillow.com/homedetails/409-Clifton-St-Camden-AL-36726/236011822_zpid/",
+      "price": "$175,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,334 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISbtw1tt9hxwwe0000000000.jpg"
+    },
+    {
+      "adress": "440 Alta Vista Dr, Chelsea, AL 35043",
+      "link": "https://www.zillow.com/homedetails/440-Alta-Vista-Dr-Chelsea-AL-35043/67424856_zpid/",
+      "price": "$398,900",
+      "beds": "4 bds",
+      "baths": "4 ba",
+      "sqft": "3,240 sqft",
+      "image": "https://photos.zillowstatic.com/fp/bc54a0d19834f74dbb7a5da40009b5cd-p_e.jpg"
+    },
+    {
+      "adress": "1303 Tommy Ln, Athens, AL 35611",
+      "link": "https://www.zillow.com/homedetails/1303-Tommy-Ln-Athens-AL-35611/128479167_zpid/",
+      "price": "$209,000",
+      "beds": "3 bds",
+      "baths": "4 ba",
+      "sqft": "3,202 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISrhi3d4ceddht0000000000.jpg"
+    },
+    {
+      "adress": "6094 Eagle Point Cir, Birmingham, AL 35242",
+      "link": "https://www.zillow.com/homedetails/6094-Eagle-Point-Cir-Birmingham-AL-35242/183017_zpid/",
+      "price": "$414,900",
+      "beds": "4 bds",
+      "baths": "4 ba",
+      "sqft": "2,851 sqft",
+      "image": "https://photos.zillowstatic.com/fp/d7f2bbba1129a870a329aaf4c868a605-p_e.jpg"
+    },
+    {
+      "adress": "489 Hillandell Dr, Hoover, AL 35244",
+      "link": "https://www.zillow.com/homedetails/489-Hillandell-Dr-Hoover-AL-35244/188788_zpid/",
+      "price": "$399,000",
+      "beds": "3 bds",
+      "baths": "4 ba",
+      "sqft": "4,283 sqft",
+      "image": "https://photos.zillowstatic.com/fp/1a757aa20e436576bc0cb0223235a7ba-p_e.jpg"
+    },
+    {
+      "adress": "205 Jarrett Ln, Madison, AL 35758",
+      "link": "https://www.zillow.com/homedetails/205-Jarrett-Ln-Madison-AL-35758/92082391_zpid/",
+      "price": "$200,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,844 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS7e60ppyo3xp61000000000.jpg"
+    },
+    {
+      "adress": "6188 Alabama Dr, Trussville, AL 35173",
+      "link": "https://www.zillow.com/homedetails/6188-Alabama-Dr-Trussville-AL-35173/900155_zpid/",
+      "price": "$435,000",
+      "beds": "4 bds",
+      "baths": "5 ba",
+      "sqft": "4,040 sqft",
+      "image": "https://photos.zillowstatic.com/fp/df71cc2b26d7837b9dfd3359e248ccc8-p_e.jpg"
+    }
+  ],
+  "Alaska": [
+    {
+      "adress": "1515 Husky Way, Fairbanks, AK 99709",
+      "link": "https://www.zillow.com/homedetails/1515-Husky-Way-Fairbanks-AK-99709/74487689_zpid/",
+      "price": "$149,900",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,860 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISnu9miwd8473t1000000000.jpg"
+    },
+    {
+      "adress": "0 Island Lake Rd, Kenai, AK 99611",
+      "link": "https://www.zillow.com/homedetails/0-Island-Lake-Rd-Kenai-AK-99611/2078091830_zpid/",
+      "price": "$49,000",
+      "sqft": "3.95 acres lot",
+      "image": "https://photos.zillowstatic.com/p_e/IS729al35pbbxe1000000000.jpg"
+    },
+    {
+      "adress": "L5 B2 Caribou Is, Cooper Landing, AK 99572",
+      "link": "https://www.zillow.com/homedetails/L5-B2-Caribou-Is-Cooper-Landing-AK-99572/2077733892_zpid/",
+      "price": "$249,000",
+      "beds": "3 bds",
+      "baths": "1 ba",
+      "sqft": "1,317 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS3v00l9wmi0ru1000000000.jpg"
+    },
+    {
+      "adress": "1726 Karluk St, Anchorage, AK 99501",
+      "link": "https://www.zillow.com/homedetails/1726-Karluk-St-Anchorage-AK-99501/4806_zpid/",
+      "price": "$329,000",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "1,788 sqft",
+      "image": "https://photos.zillowstatic.com/fp/75b7da388bbae7734c816991c08207cf-p_e.jpg"
+    },
+    {
+      "adress": "6514 S Alans Dr, Wasilla, AK 99623",
+      "link": "https://www.zillow.com/homedetails/6514-S-Alans-Dr-Wasilla-AK-99623/219475290_zpid/",
+      "price": "$299,999",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,454 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS7eyt2e7gleu90000000000.jpg"
+    },
+    {
+      "adress": "5731 W Petit Cir, Wasilla, AK 99623",
+      "link": "https://www.zillow.com/homedetails/5731-W-Petit-Cir-Wasilla-AK-99623/219482159_zpid/",
+      "price": "$255,000",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "2,048 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISv8aei4bpsc931000000000.jpg"
+    },
+    {
+      "adress": "0 Undisclosed Address, Homer, AK 99603",
+      "link": "https://www.zillow.com/homedetails/0-Undisclosed-Address-Homer-AK-99603/2080078577_zpid/",
+      "price": "$8,000,000",
+      "beds": "8 bds",
+      "baths": "12 ba",
+      "sqft": "17,000 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISvcdfw3g0wmdp0000000000.jpg"
+    },
+    {
+      "adress": "2621 E Wanamingo Dr, Wasilla, AK 99654",
+      "link": "https://www.zillow.com/homedetails/2621-E-Wanamingo-Dr-Wasilla-AK-99654/90691620_zpid/",
+      "price": "$269,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,502 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISjn1ovwa5u7e61000000000.jpg"
+    },
+    {
+      "adress": "Island E LOT 42, Meyers Chuck, AK 99903",
+      "link": "https://www.zillow.com/homedetails/Island-E-LOT-42-Meyers-Chuck-AK-99903/2083650479_zpid/",
+      "price": "$299,000",
+      "beds": "1 bd",
+      "baths": "1 ba",
+      "sqft": "400 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISa1bqrmji0yqc1000000000.jpg"
+    },
+    {
+      "adress": "17114 W Lighthouse Dr, Big Lake, AK 99623",
+      "link": "https://www.zillow.com/homedetails/17114-W-Lighthouse-Dr-Big-Lake-AK-99623/219478786_zpid/",
+      "price": "$149,900",
+      "beds": "2 bds",
+      "baths": "3 ba",
+      "sqft": "2,224 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISfko8n29o146g1000000000.jpg"
+    },
+    {
+      "adress": "TR A #ROAD, Remote, AK 99000",
+      "link": "https://www.zillow.com/homedetails/TR-A-ROAD-Remote-AK-99000/2102972614_zpid/",
+      "price": "$52,000",
+      "beds": "1 bd",
+      "baths": "1 ba",
+      "sqft": "1,700 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISblih1hw4ehh21000000000.jpg"
+    },
+    {
+      "adress": "1540 W Amethyst Cir, Wasilla, AK 99654",
+      "link": "https://www.zillow.com/homedetails/1540-W-Amethyst-Cir-Wasilla-AK-99654/305397990_zpid/",
+      "price": "$425,000",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,216 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISn6rzpobxig0m0000000000.jpg"
+    },
+    {
+      "adress": "Towns Pl, Trapper Creek, AK 99683",
+      "link": "https://www.zillow.com/homedetails/Towns-Pl-Trapper-Creek-AK-99683/2077568208_zpid/",
+      "price": "$75,000",
+      "sqft": "4 acres lot",
+      "image": "https://photos.zillowstatic.com/p_e/ISfko0tldupqrd1000000000.jpg"
+    },
+    {
+      "adress": "3457 Moosewalk Rd, North Pole, AK 99705",
+      "link": "https://www.zillow.com/homedetails/3457-Moosewalk-Rd-North-Pole-AK-99705/74494809_zpid/",
+      "price": "$294,900",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,812 sqft",
+      "image": "https://photos.zillowstatic.com/fp/73d982b1e9c0080d0dc5d745ec02c264-p_e.jpg"
+    },
+    {
+      "adress": "3330 Whiteside Ct, Fairbanks, AK 99709",
+      "link": "https://www.zillow.com/homedetails/3330-Whiteside-Ct-Fairbanks-AK-99709/219801827_zpid/",
+      "price": "$399,900",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "1,983 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzvaxs7vzykj01000000000.jpg"
+    },
+    {
+      "adress": "5123 E Hart Lake Loop, Wasilla, AK 99654",
+      "link": "https://www.zillow.com/homedetails/5123-E-Hart-Lake-Loop-Wasilla-AK-99654/111990359_zpid/",
+      "price": "$685,000",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "2,880 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISz35mimdk82ot1000000000.jpg"
+    },
+    {
+      "adress": "2328 Moonlight Dr, North Pole, AK 99705",
+      "link": "https://www.zillow.com/homedetails/2328-Moonlight-Dr-North-Pole-AK-99705/74501300_zpid/",
+      "price": "$324,900",
+      "beds": "3 bds",
+      "baths": "3 ba",
+      "sqft": "1,823 sqft",
+      "image": "https://photos.zillowstatic.com/fp/ee873ae91565c05737cbb6e8a85d7378-p_e.jpg"
+    },
+    {
+      "adress": "4660 S Captains Cir, Wasilla, AK 99623",
+      "link": "https://www.zillow.com/homedetails/4660-S-Captains-Cir-Wasilla-AK-99623/74525013_zpid/",
+      "price": "$209,000",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "2,133 sqft",
+      "image": "https://photos.zillowstatic.com/fp/2f6e4c97a102cf0e061a29fbc37a0fdf-p_e.jpg"
+    },
+    {
+      "adress": "5101 E Alder Dr, Wasilla, AK 99654",
+      "link": "https://www.zillow.com/homedetails/5101-E-Alder-Dr-Wasilla-AK-99654/74524859_zpid/",
+      "price": "$179,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,891 sqft",
+      "image": "https://photos.zillowstatic.com/fp/9d602cc30a47a6b34dd6d5abbd933f20-p_e.jpg"
+    },
+    {
+      "adress": "5850 E Camborne Dr, Palmer, AK 99645",
+      "link": "https://www.zillow.com/homedetails/5850-E-Camborne-Dr-Palmer-AK-99645/219465223_zpid/",
+      "price": "$315,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,852 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISneticnl64vap0000000000.jpg"
+    },
+    {
+      "adress": "1746 E 58th Cir, Anchorage, AK 99507",
+      "link": "https://www.zillow.com/homedetails/1746-E-58th-Cir-Anchorage-AK-99507/23208_zpid/",
+      "price": "$227,000",
+      "beds": "2 bds",
+      "baths": "1 ba",
+      "sqft": "816 sqft",
+      "image": "https://photos.zillowstatic.com/fp/de59ecc3bae5e205dec15ab3af7f1c7d-p_e.jpg"
+    },
+    {
+      "adress": "6223 Cliff Point Rd, Kodiak, AK 99615",
+      "link": "https://www.zillow.com/homedetails/6223-Cliff-Point-Rd-Kodiak-AK-99615/300027719_zpid/",
+      "price": "$3,295,000",
+      "beds": "4 bds",
+      "baths": "6 ba",
+      "sqft": "4,600 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS7yp06pfl25vo1000000000.jpg"
+    },
+    {
+      "adress": "1154 W Moose Park Dr, Wasilla, AK 99654",
+      "link": "https://www.zillow.com/homedetails/1154-W-Moose-Park-Dr-Wasilla-AK-99654/119382942_zpid/",
+      "price": "$354,500",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,600 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzn4373zf99920000000000.jpg"
+    },
+    {
+      "adress": "Coon Cv, Ketchikan, AK 99901",
+      "link": "https://www.zillow.com/homedetails/Coon-Cv-Ketchikan-AK-99901/306492741_zpid/",
+      "price": "$15,000",
+      "sqft": "160 acres lot",
+      "image": "https://photos.zillowstatic.com/p_e/IS3zva9911gfel0000000000.jpg"
+    },
+    {
+      "adress": "2656 W. Megans Cir, Wasilla, AK 99623",
+      "link": "https://www.zillow.com/homedetails/2656-W-Megans-Cir-Wasilla-AK-99623/2090290653_zpid/",
+      "price": "$50,000",
+      "beds": "Studio",
+      "baths": "1 ba",
+      "sqft": "192 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/IS7i5eaow94qav1000000000.jpg"
+    },
+    {
+      "adress": "L6A B22 Keyes Pt, Port Alsworth, AK 99653",
+      "link": "https://www.zillow.com/homedetails/L6A-B22-Keyes-Pt-Port-Alsworth-AK-99653/2106811961_zpid/",
+      "price": "$25,000",
+      "sqft": "14.81 acres lot",
+      "image": "https://photos.zillowstatic.com/p_e/ISus9few9tdwx31000000000.jpg"
+    },
+    {
+      "adress": "19910 Unimak Cir, Eagle River, AK 99577",
+      "link": "https://www.zillow.com/homedetails/19910-Unimak-Cir-Eagle-River-AK-99577/59137_zpid/",
+      "price": "$360,000",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,404 sqft",
+      "image": "https://photos.zillowstatic.com/fp/3e5b553ff447aa5e3c268ce814632323-p_e.jpg"
+    },
+    {
+      "adress": "1865 Cirrus Ct, North Pole, AK 99705",
+      "link": "https://www.zillow.com/homedetails/1865-Cirrus-Ct-North-Pole-AK-99705/219806692_zpid/",
+      "price": "$249,900",
+      "beds": "2 bds",
+      "baths": "1 ba",
+      "sqft": "1,320 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISzj9smywn0fg20000000000.jpg"
+    },
+    {
+      "adress": "23612 Charlie Rd, Chugiak, AK 99567",
+      "link": "https://www.zillow.com/homedetails/23612-Charlie-Rd-Chugiak-AK-99567/62118_zpid/",
+      "price": "$250,000",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "3,406 sqft",
+      "image": "https://photos.zillowstatic.com/fp/9751b255c026da8ea9d26ab149cf5c70-p_e.jpg"
+    },
+    {
+      "adress": "7801 Cox Dr, Anchorage, AK 99516",
+      "link": "https://www.zillow.com/homedetails/7801-Cox-Dr-Anchorage-AK-99516/48752_zpid/",
+      "price": "$240,000",
+      "beds": "2 bds",
+      "baths": "2 ba",
+      "sqft": "1,365 sqft",
+      "image": "https://photos.zillowstatic.com/fp/f2751e007a5445d118e29fe44c6bb8a7-p_e.jpg"
+    },
+    {
+      "adress": "8982 S Old Glenn Hwy, Palmer, AK 99645",
+      "link": "https://www.zillow.com/homedetails/8982-S-Old-Glenn-Hwy-Palmer-AK-99645/84149342_zpid/",
+      "price": "$249,000",
+      "beds": "1 bd",
+      "baths": "1 ba",
+      "sqft": "1,680 sqft",
+      "image": "https://photos.zillowstatic.com/fp/a478b9f8be50debc3a8ef571fbad0942-p_e.jpg"
+    },
+    {
+      "adress": "48275 Rustic Ave, Soldotna, AK 99669",
+      "link": "https://www.zillow.com/homedetails/48275-Rustic-Ave-Soldotna-AK-99669/223319959_zpid/",
+      "price": "$249,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "1,232 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISb9hg6ng71uko1000000000.jpg"
+    },
+    {
+      "adress": "11239 W Meadowood Dr, Houston, AK 99623",
+      "link": "https://www.zillow.com/homedetails/11239-W-Meadowood-Dr-Houston-AK-99623/219457324_zpid/",
+      "price": "$209,000",
+      "beds": "3 bds",
+      "baths": "2 ba",
+      "sqft": "2,041 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISnepnt8koj9650000000000.jpg"
+    },
+    {
+      "adress": "16830 Riverview Dr, Ninilchik, AK 99639",
+      "link": "https://www.zillow.com/homedetails/16830-Riverview-Dr-Ninilchik-AK-99639/223332573_zpid/",
+      "price": "$99,000",
+      "beds": "1 bd",
+      "baths": "1 ba",
+      "sqft": "1,095 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISbtsegx0xmi761000000000.jpg"
+    },
+    {
+      "adress": "Township Road 17 Konovalof Ave #A, Nikiski, AK 99635",
+      "link": "https://www.zillow.com/homedetails/Township-Road-17-Konovalof-Ave-A-Nikiski-AK-99635/2078812542_zpid/",
+      "price": "$37,500",
+      "sqft": "18 acres lot",
+      "image": "https://photos.zillowstatic.com/p_e/ISf01xu3jk8f7t1000000000.jpg"
+    },
+    {
+      "adress": "3500 N Seagull Dr, Palmer, AK 99645",
+      "link": "https://www.zillow.com/homedetails/3500-N-Seagull-Dr-Palmer-AK-99645/2077344200_zpid/",
+      "price": "$474,500",
+      "beds": "4 bds",
+      "baths": "3 ba",
+      "sqft": "2,551 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISrdbrjytwbrs80000000000.jpg"
+    },
+    {
+      "adress": "16505 Southcliff Cir, Anchorage, AK 99516",
+      "link": "https://www.zillow.com/homedetails/16505-Southcliff-Cir-Anchorage-AK-99516/61500739_zpid/",
+      "price": "$3,800,000",
+      "beds": "4 bds",
+      "baths": "4 ba",
+      "sqft": "6,841 sqft",
+      "image": "https://photos.zillowstatic.com/fp/a769a5da280c6b855cac939e32bd9364-p_e.jpg"
+    },
+    {
+      "adress": "3806 N Point Cir, Anchorage, AK 99502",
+      "link": "https://www.zillow.com/homedetails/3806-N-Point-Cir-Anchorage-AK-99502/35914_zpid/",
+      "price": "$3,200,000",
+      "beds": "5 bds",
+      "baths": "7 ba",
+      "sqft": "7,170 sqft",
+      "image": "https://photos.zillowstatic.com/fp/74af9033f5e4fa11cfec8d50854e30b8-p_e.jpg"
+    },
+    {
+      "adress": "3515 Knik Ave, Anchorage, AK 99517",
+      "link": "https://www.zillow.com/homedetails/3515-Knik-Ave-Anchorage-AK-99517/2273_zpid/",
+      "price": "$395,500",
+      "beds": "4 bds",
+      "baths": "2 ba",
+      "sqft": "2,374 sqft",
+      "image": "https://photos.zillowstatic.com/fp/94b14092bcea5d1a2f0d0ebe70dcfa14-p_e.jpg"
+    },
+    {
+      "adress": "1945 Lynx Ln, Fairbanks, AK 99709",
+      "link": "https://www.zillow.com/homedetails/1945-Lynx-Ln-Fairbanks-AK-99709/219795118_zpid/",
+      "price": "$90,000",
+      "beds": "2 bds",
+      "baths": "1 ba",
+      "sqft": "1,154 sqft",
+      "image": "https://photos.zillowstatic.com/p_e/ISrl9bg2qsiyu21000000000.jpg"
+    }
+  ]
+}
