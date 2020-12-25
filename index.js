@@ -4,7 +4,7 @@ const userAgent = require('user-agents')
 const express =  require('express')
 const fs = require('fs')
 const { states } = require('./states.json')
-
+const dts = require('./data/data.json')
 
 const app = express()
 
@@ -99,10 +99,11 @@ async function scrape(queries) {
 }
 
 app.get('/api', async (req, res) => {
-  const data = await scrape(states)
-  fs.writeFileSync('./data.json', JSON.stringify(data, null, 2))
-  console.log(data)
-  res.json(data)
+  // const data = await scrape(states)
+  // fs.writeFileSync('./data.json', JSON.stringify(data, null, 2))
+  // console.log(data)
+  // res.json(data)
+  res.json(dts)
 })
 
 
