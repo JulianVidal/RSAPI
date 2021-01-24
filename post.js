@@ -23,7 +23,7 @@ app.post('/post', (req, res) => {
 
       const repeated = users.find(u => u.email === user.email)
       console.log(repeated, ' repeated')
-      if (repeated) {
+      if (repeated === undefined) {
         console.log('1')
         users.push(user)
         const json = JSON.stringify(users)
@@ -31,7 +31,7 @@ app.post('/post', (req, res) => {
         res.sendStatus(200)
       } else {
         console.log('2')
-        res.status(406).send({message:'Already Signed up'})
+        res.status(406).send({message:'Already Signed Up'})
       }
 
     }
