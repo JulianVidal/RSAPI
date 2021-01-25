@@ -20,7 +20,7 @@ app.post('/signup', (req, res) => {
       return true
     } else {
       const users = JSON.parse(data)
-
+      console.log(users)
       const repeated = users.find(u => u.email === user.email)
       console.log(repeated, ' repeated')
       if (repeated === undefined) {
