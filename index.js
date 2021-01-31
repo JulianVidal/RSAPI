@@ -2,8 +2,8 @@ const express =  require('express')
 const fs = require('fs')
 const dts = require('./data/data.json')
 const scrape = require('./SearchAll.js')
-// import scrape from './SearchAll.js'
 const { states } = require('./states.json')
+const cors = require('cors')
 
 const app = express()
 
@@ -18,6 +18,9 @@ app.get('/data', async (req, res) => {
   res.json(data)
   // res.json(dts)
 })
+
+app.use(express.json({ extended: true}))
+app.use(cors())
 
 app.post('/signup', (req, res) => {
   const user = req.body
@@ -68,6 +71,12 @@ app.post('/login', (req, res) => {
 
     }
   } )
+})
+
+app.post('/post', (req, res) => {
+  const user = req.body
+  console.log(user)
+  res.send(user)
 })
 
 app.listen(5000)
