@@ -33,15 +33,15 @@ app.post('/signup', (req, res) => {
       const users = JSON.parse(data)
       console.log(users)
       const repeated = users.find(u => u.email === user.email)
-      console.log(repeated, ' repeated')
+      console.log(repeated,  'Email already used')
       if (repeated === undefined) {
-        console.log('1', 'singup')
+        console.log('Succesful singup')
         users.push(user)
         const json = JSON.stringify(users)
         fs.writeFile('./data/users.json', json, error => {if (error) throw error})
         res.sendStatus(200)
       } else {
-        console.log('2', 'signup')
+        console.log('Unsuccesful signup')
         res.status(406).send({message:'Account already exists'})
       }
 
@@ -60,23 +60,44 @@ app.post('/login', (req, res) => {
       const users = JSON.parse(data)
 
       const repeated = users.find(u => u.email === user.email)
-      console.log(repeated, ' repeated')
+      console.log(repeated, 'User found')
       if (repeated !== undefined) {
-        console.log('1', 'Login')
-        res.sendStatus(200)
+        console.log('Succesful log in')
+        res.status(200).send(repeated)
       } else {
-        console.log('2', 'login')
-        res.status(406).send({message:'Account Does Not Exist'})
+        console.log('Unsuccesful log in')
+        res.status(406).send({message:'Account does not exist'})
       }
 
     }
   } )
 })
 
-app.post('/post', (req, res) => {
+app.post('/likes', (req, res) => {
   const user = req.body
   console.log(user)
-  res.send(user)
+  
+  fs.readFile('./data/users.json', 'utf8', (err, data) => {
+    if (err) {
+      return true
+    } else {
+      const users = JSON.parse(data)
+      console.log(users)
+      const repeatedIndex = users.findIndex(u => u.email === user.email)
+      console.log(repeatedIndex,  'User index found')
+      if (repeatedIndex !== -1) {
+        console.log(users[repeatedIndex].properties.length < user.properties.length ? 'Succesful like' : 'Successful unlike')
+        users[repeatedIndex] = user
+        const json = JSON.stringify(users)
+        fs.writeFile('./data/users.json', json, error => {if (error) throw error})
+        res.sendStatus(200)
+      } else {
+        console.log('Unsuccesful like')
+        res.status(406).send({message:'Account does not exist'})
+      }
+
+    }
+  } )
 })
 
 app.listen(5000)
