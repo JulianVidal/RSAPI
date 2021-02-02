@@ -1,11 +1,6 @@
 const puppeteer = require('puppeteer-extra')
 const stealthPlugin = require('puppeteer-extra-plugin-stealth')
 const userAgent = require('user-agents')
-const express =  require('express')
-const fs = require('fs')
-const dts = require('./data/data.json')
-
-const app = express()
 
 
 module.exports = async function scrape (queries) {
@@ -21,7 +16,7 @@ module.exports = async function scrape (queries) {
   await page.setUserAgent(userAgent.toString())
   
   await page.goto('https://www.zillow.com/', {
-    waitUntil: 'domcontentloaded'
+    waitUntil: 'networkidle0'
   })
 
   const list = {}
@@ -35,7 +30,6 @@ module.exports = async function scrape (queries) {
     await new Promise(resolve => setTimeout(resolve, 150));
     await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
     await new Promise(resolve => setTimeout(resolve, 500));
-
   } else {
     await new Promise(resolve => setTimeout(resolve, 500));
 
@@ -114,16 +108,3 @@ module.exports = async function scrape (queries) {
 
   return list
 }
-
-// app.get('/api', async (req, res) => {
-//   const data = await scrape(states)
-//   fs.writeFileSync('./data.json', JSON.stringify(data, null, 2))
-//   console.log(data)
-//   res.json(data)
-//   // res.json(dts)
-// })
-
-
-// app.listen(5000)
-
-// console.log('Listening at port 5000')
