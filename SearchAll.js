@@ -3,6 +3,7 @@ const stealthPlugin = require('puppeteer-extra-plugin-stealth')
 const userAgent = require('user-agents')
 
 
+
 module.exports = async function scrape (queries) {
   await puppeteer.use(stealthPlugin())
 

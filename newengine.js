@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer-extra')
 const stealthPlugin = require('puppeteer-extra-plugin-stealth')
 const userAgent = require('user-agents')
+const fetch = require('node-fetch')
 
 exports.onload = async () => {
   await puppeteer.use(stealthPlugin())
@@ -91,5 +92,22 @@ exports.searchZillow = async function  (search) {
       })
 
       return properties
-  }
+
+//   var myHeaders = new fetch.Headers();
+// myHeaders.append("Cookie", "search=6|1615102916556%7Cregion%3Dphoenix%26rect%3D33.920569%252C-111.926046%252C33.290259%252C-112.324055%26pt%3Dpmf%252Cpf%26fs%3D1%26fr%3D0%26rs%3D0%26ah%3D0%09%0940326%09%09%09%09%09%09; zgsession=1|1adca8fe-7e5d-452a-a9c1-d59fc1ff852a; zguid=23|%24b877ca32-a7ab-4088-b1cc-9897461ddc85; AWSALB=zEj5JzgwFXGj1iktlERZ7mjNGv1Qclnysox519a+iPWAlUzNH8amYShFsuPwCT1q13N5xUGybXUh30Fozql1kCLnzOPr19BtZl0XMSHH9DI+nNBg79o5UgGM9OvT; AWSALBCORS=zEj5JzgwFXGj1iktlERZ7mjNGv1Qclnysox519a+iPWAlUzNH8amYShFsuPwCT1q13N5xUGybXUh30Fozql1kCLnzOPr19BtZl0XMSHH9DI+nNBg79o5UgGM9OvT; JSESSIONID=64979608BF9B588FC2B1108B4E22D122");
+
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
+// let a
+// await fetch("https://www.zillow.com/homes/for_sale/phoenix", requestOptions)
+//   .then(response => response.text())
+//   .then(result => a = result)
+//   .catch(error => console.log('error', error));
+
+
+//   return a  
+}
 
