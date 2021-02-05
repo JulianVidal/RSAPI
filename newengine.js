@@ -1,12 +1,6 @@
 const puppeteer = require('puppeteer-extra')
 const stealthPlugin = require('puppeteer-extra-plugin-stealth')
 const userAgent = require('user-agents')
-const express =  require('express')
-const states = require('./states.json')
-
-// const app = express()
-
-// let page
 
 exports.onload = async () => {
   await puppeteer.use(stealthPlugin())
@@ -32,21 +26,6 @@ exports.onload = async () => {
     await new Promise(resolve => setTimeout(resolve, 500));
 }
 
-// app.get('/api', async (req, res) => {
-//   const search = req.query.location.replace(/['"]+/g, '')
-//   console.log(search)
-
-//   const data = await searchZillow(search)
-
-//   res.send(data)
-// })
-
-// onload()
-
-// app.listen(5000)
-
-// console.log('Listening at port 5000')
-
 exports.searchZillow = async function  (search) {
   await new Promise(resolve => setTimeout(resolve, 500));
 
@@ -64,16 +43,15 @@ exports.searchZillow = async function  (search) {
   await page.waitForNavigation({waitUntil: 'networkidle2'})
   await page.waitForSelector('#grid-search-results > ul', {timeout: 0})
 
-
-    await page.evaluate( async () => {
-      let distance = 0
-      while (distance < document.body.scrollHeight) {
-        await new Promise(resolve => setTimeout(resolve, 400));
-        window.scrollBy(0, window.innerHeight)
-        distance += window.innerHeight
-      }
-      })
-  
+  await page.evaluate( async () => {
+    let distance = 0
+    while (distance < document.body.scrollHeight) {
+      await new Promise(resolve => setTimeout(resolve, 400));
+      window.scrollBy(0, window.innerHeight)
+      distance += window.innerHeight
+    }
+    })
+    
     const properties = await page.evaluate( () => {
       const properties = []
   
