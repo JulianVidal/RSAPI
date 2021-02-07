@@ -11,9 +11,10 @@ const app = express()
 let page
 
 
-// app.get('/api', (req, res) => {
-//   res.json(dts)
-// })
+app.get('/api', async (req, res) => {
+  // await new Promise(r => setTimeout(r, 100000));
+  res.json(dts.Alabama)
+})
 
 app.get('/data', async (req, res) => {
   const data = await scrape(states)
@@ -104,39 +105,15 @@ app.post('/likes', (req, res) => {
   } )
 })
 
-app.get('/api', async (req, res) => {
-  const search = req.query.location.replace(/['"]+/g, '')
-  console.log(search)
+// app.get('/api', async (req, res) => {
+//   const search = req.query.location.replace(/['"]+/g, '')
+//   console.log(search)
 
-  const data = await searchZillow(search)
-  console.log(data)
-  res.send(data)
-})
+//   const data = await searchZillow(search)
+//   console.log(data)
+//   res.send(data)
+// })
 
-// const onload = async () => {
-//   await puppeteer.use(stealthPlugin())
-
-//   const browser = await puppeteer.launch({headless: false})
-
-//   page = await browser.newPage()
-//   await page.setViewport({
-//     width: 640,
-//     height: 480
-//   })
-//   await page.setUserAgent(userAgent.toString())
-  
-//   await page.goto('https://www.zillow.com/', {
-//     waitUntil: 'networkidle0'
-//   })
-
-//   await page.waitForSelector('#search-box-input', {timeout: 0})
-//     await page.type('#search-box-input', 'washington', {delay: 100})
-//     await page.click('#search-icon')
-//     await new Promise(resolve => setTimeout(resolve, 150));
-//     await page.click('.listing-interstitial-buttons > li:nth-child(3) > button')
-//     await new Promise(resolve => setTimeout(resolve, 500));
-// }
-
-onload()
+// onload()
 
 app.listen(5000)
