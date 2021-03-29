@@ -65,4 +65,4 @@ app.get("/property", async (req, res) => {
   res.json({ data, error });
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
