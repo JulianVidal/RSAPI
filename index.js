@@ -2,7 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const fetch = require("node-fetch");
 
-const ALLOWED_ORIGIN = ["realstate.vercel.app"];
+const ALLOWED_ORIGIN = ["htpp://realstate.vercel.app", "htpps://realstate.vercel.app"];
+
+if (!process.env.DEPLOYED) {
+  ALLOWED_ORIGIN.push('http//localhost:3000')
+}
 
 const app = express();
 app.use(cors({
