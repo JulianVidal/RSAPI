@@ -1,14 +1,24 @@
 const express = require("express");
+const cors = require("cors");
 const fetch = require("node-fetch");
 
+const ALLOWED_ORIGIN = ["realstate.vercel.app"];
+
 const app = express();
+app.use(cors({
+  origin: (origin, callback) => {
+    if (ALLOWED_ORIGIN.indexOf(origin) === -1) {
+      console.log(`Blocked connection from ${origin}`)
+      const msg = `The CORS policy for this site does not allow access from the specified origin: ${origin}`
+      return callback(new Error(msg), false)
+    }
+    
+    console.log(`Accepted connection from ${origin}`)
+    return callback(null, true)
+  }
+}));
 
 app.get("/properties", async (req, res) => {
-  const origin = req.get("host");
-  if (origin.indexOf("localhost") !== -1) {
-    res.json({ data: { data: null }, error: "Localhost" });
-    return;
-  }
   const search = req.query.location;
   const option = req.query.type;
   let error;
@@ -37,11 +47,6 @@ app.get("/properties", async (req, res) => {
 });
 
 app.get("/property", async (req, res) => {
-  const origin = req.get("host");
-  if (origin.indexOf("localhost") !== -1) {
-    res.json({ data: { data: null }, error: "Localhost" });
-    return;
-  }
   const propertyID = req.query.property_id;
   let error;
   const data = await fetch(
