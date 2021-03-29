@@ -1,119 +1,68 @@
-const express =  require('express')
-const fs = require('fs')
-const dts = require('./data/data.json')
-const scrape = require('./SearchAll.js')
-const { states } = require('./states.json')
-const cors = require('cors')
-const {searchZillow, onload} = require('./newengine.js')
+const express = require("express");
+const fetch = require("node-fetch");
 
-const app = express()
+const app = express();
 
-let page
-
-
-app.get('/api', async (req, res) => {
-  // await new Promise(r => setTimeout(r, 100000));
-  res.json(dts.Alabama)
-})
-
-app.get('/data', async (req, res) => {
-  const data = await scrape(states)
-  fs.writeFileSync('./data.json', JSON.stringify(data, null, 2))
-  console.log(data)
-  res.json(data)
-  // res.json(dts)
-})
-
-app.use(express.json({ extended: true}))
-app.use(cors())
-
-app.post('/signup', (req, res) => {
-  const user = req.body
-  console.log(req.body)
-
-  fs.readFile('./data/users.json', 'utf8', (err, data) => {
-    if (err) {
-      return true
-    } else {
-      const users = JSON.parse(data)
-      console.log(users)
-      const repeated = users.find(u => u.email === user.email)
-      console.log(repeated,  'Email already used')
-      if (repeated === undefined) {
-        console.log('Succesful singup')
-        users.push(user)
-        const json = JSON.stringify(users)
-        fs.writeFile('./data/users.json', json, error => {if (error) throw error})
-        res.sendStatus(200)
-      } else {
-        console.log('Unsuccesful signup')
-        res.status(406).send({message:'Account already exists'})
-      }
-
+app.get("/properties", async (req, res) => {
+  const origin = req.get("host");
+  if (origin.indexOf("localhost") !== -1) {
+    res.json({ data: { data: null }, error: "Localhost" });
+    return;
+  }
+  const search = req.query.location;
+  const option = req.query.type;
+  let error;
+  const data = await fetch(
+    "https://realtor.p.rapidapi.com/properties/v2/list-for-" +
+      option +
+      "?city=" +
+      search +
+      "&limit=100&offset=0&sort=relevance",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": "faace970c9mshb9a6dc176f9b095p1b3796jsn1ac808ba8436",
+        "x-rapidapi-host": "realtor.p.rapidapi.com",
+      },
     }
-  } )
-})
+  )
+    .then(async (response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      error = new Error(err);
+    });
+  console.log(data);
+  res.json({ data, error });
+});
 
-app.post('/login', (req, res) => {
-  const user = req.body
-  console.log(req.body)
-
-  fs.readFile('./data/users.json', 'utf8', (err, data) => {
-    if (err) {
-      return true
-    } else {
-      const users = JSON.parse(data)
-
-      const repeated = users.find(u => u.email === user.email)
-      console.log(repeated, 'User found')
-      if (repeated !== undefined) {
-        console.log('Succesful log in')
-        res.status(200).send(repeated)
-      } else {
-        console.log('Unsuccesful log in')
-        res.status(406).send({message:'Account does not exist'})
-      }
-
+app.get("/property", async (req, res) => {
+  const origin = req.get("host");
+  if (origin.indexOf("localhost") !== -1) {
+    res.json({ data: { data: null }, error: "Localhost" });
+    return;
+  }
+  const propertyID = req.query.property_id;
+  let error;
+  const data = await fetch(
+    "https://realtor.p.rapidapi.com/properties/v2/detail?property_id=" +
+      propertyID,
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": "faace970c9mshb9a6dc176f9b095p1b3796jsn1ac808ba8436",
+        "x-rapidapi-host": "realtor.p.rapidapi.com",
+      },
     }
-  } )
-})
+  )
+    .then(async (response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      error = err;
+    });
+  console.log(data);
+  res.json({ data, error });
+});
 
-app.post('/likes', (req, res) => {
-  const user = req.body
-  console.log(user)
-  
-  fs.readFile('./data/users.json', 'utf8', (err, data) => {
-    if (err) {
-      return true
-    } else {
-      const users = JSON.parse(data)
-      console.log(users)
-      const repeatedIndex = users.findIndex(u => u.email === user.email)
-      console.log(repeatedIndex,  'User index found')
-      if (repeatedIndex !== -1) {
-        console.log(users[repeatedIndex].properties.length < user.properties.length ? 'Succesful like' : 'Successful unlike')
-        users[repeatedIndex] = user
-        const json = JSON.stringify(users)
-        fs.writeFile('./data/users.json', json, error => {if (error) throw error})
-        res.sendStatus(200)
-      } else {
-        console.log('Unsuccesful like')
-        res.status(406).send({message:'Account does not exist'})
-      }
-
-    }
-  } )
-})
-
-// app.get('/api', async (req, res) => {
-//   const search = req.query.location.replace(/['"]+/g, '')
-//   console.log(search)
-
-//   const data = await searchZillow(search)
-//   console.log(data)
-//   res.send(data)
-// })
-
-// onload()
-
-app.listen(5000)
+app.listen(5000);
