@@ -8,7 +8,7 @@ const ALLOWED_ORIGIN = [
 ];
 
 if (!process.env.DEPLOYED) {
-  ALLOWED_ORIGIN.push("http//localhost:3000");
+  ALLOWED_ORIGIN.push("http://localhost:3000");
 }
 
 const app = express();
