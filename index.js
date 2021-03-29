@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 
 const ALLOWED_ORIGIN = [
   "htpp://realstate.vercel.app",
-  "htpps://realstate.vercel.app",
+  "https://realstate.vercel.app",
 ];
 
 if (!process.env.DEPLOYED) {
