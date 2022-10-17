@@ -10,7 +10,7 @@ const ALLOWED_ORIGIN = [
   "https://realstate-git-master-julianvidal.vercel.app",
   "http://realstate-git-master-julianvidal.vercel.app",
   "https://realstate-julianvidal.vercel.app/",
-  "https://realstate-julianvidal.vercel.app/"
+  "http://realstate-julianvidal.vercel.app/"
 ];
 
 if (!process.env.DEPLOYED) {
